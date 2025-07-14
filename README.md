@@ -37,35 +37,32 @@ This project documents the forensic analysis of a spoofed phishing email imperso
 <h2>Forensic Artifacts & Screenshots
 
 </h2>
-<p align="center">
-Launch the utility: <br/>
-<img src="https://github.com/chrisaondo/Email-Header-Analysis/blob/main/002.png"/>
+<p align="left">
+Analyzing SPF, DKIM, and DMARC authentication results. <br/>
+<br/>
+<img src="https://github.com/chrisaondo/Email-Header-Analysis/blob/main/Authentication_Failed.png"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+IP address used in spoofed email is non-routable (RFC5737).  <br/>
+<img src="https://github.com/chrisaondo/Email-Header-Analysis/blob/main/Reserved_IP.png"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Malicious attachment using double extension to deceive users. <br/>
+<img src="https://github.com/chrisaondo/Email-Header-Analysis/blob/main/Double_Attachment.png"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Malware payload detected by multiple AV engines on VirusTotal.  <br/>
+<img src="https://github.com/chrisaondo/Email-Header-Analysis/blob/main/Virus_total.png"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
 
+<h2>Skills Demonstrated</h2>
+
+- <b>Email forensics & threat detection</b>
+- <b>Security protocol interpretation (SPF/DKIM/DMARC)</b>
+- <b>Malware artifact identification</b>
+- <b>Social engineering analysis</b>
+- <b>Communication of technical findings to non-technical audiences</b>
 <!--
  ```diff
 - text in red
