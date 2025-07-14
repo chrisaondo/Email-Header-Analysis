@@ -14,15 +14,32 @@ This project documents the forensic analysis of a spoofed phishing email imperso
   - <b>Social engineering via urgency in subject line.</b>
   - <b>Credential phishing via fake verification link.</b>
   - <b>Malware delivery through .exe attachment disguised as a PDF.</b>
-<h2>Environments Used </h2>
+<h2>Techniques Used</h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Header analysis (SPF, DKIM, DMARC)</b>
+- <b>IP and domain verification (RFC5737 reserved block detection)</b>
+- <b>MIME and attachment inspection</b>
+- <b>Phishing link inspection</b>
+- <b>VirusTotal detection simulation</b>
+<h2> Key Findings</h2>
 
-<h2>Program walk-through:</h2>
+| Indicator                                               | Verdict                               |
+|:---------------------------------------------------------|:---------------------------------------|
+| DKIM & DMARC                                            | Fail – Spoofed domain                 |
+| SPF	|Pass, but on a malicious lookalike domain                                                 |
+| IP Address	|198.51.100.77 – Reserved block, not routable                                        |
+| Subject Line                                            | Urgent CTA – Classic phishing trigger |
+| Body                                                    | HTML with fake verification link      |
+| Attachment                                              | .pdf.exe – Likely malware             |
+| VirusTotal Result                                       | 8/65 AV detections                    |
 
+
+<h2>Forensic Artifacts & Screenshots
+
+</h2>
 <p align="center">
 Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/chrisaondo/Email-Header-Analysis/blob/main/002.png"/>
 <br />
 <br />
 Select the disk:  <br/>
