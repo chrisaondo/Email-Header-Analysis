@@ -56,6 +56,10 @@ Malware payload detected by multiple AV engines on VirusTotal.  <br/>
 <br />
 <br />
 
+The subject line uses urgency-based social engineering, a hallmark of phishing campaigns, intended to pressure the recipient into immediate, uncritical action.<br/>
+<img src="https://github.com/chrisaondo/Email-Header-Analysis/blob/main/Subject.png"/>
+<br />
+<br />
 <h2>Skills Demonstrated</h2>
 
 - <b>Email forensics & threat detection</b>
